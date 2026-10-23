@@ -1,0 +1,5 @@
+series,id,latest,yoy,short_annualised,six_month_annualised,yoy_12m_ago,avg_2018_19
+"Average hourly earnings, private",CES0500000003,2026-09,3.02,2.36,2.48,3.85,3.16
+"ECI wages and salaries, private",ECIWAG,2026-04,3.14,3.45,,3.56,3.0
+Core PCE prices,PCEPILFE,2026-08,3.01,2.05,2.74,2.85,1.77
+Core CPI,CPILFESL,2026-09,2.79,3.41,2.85,3.11,2.17

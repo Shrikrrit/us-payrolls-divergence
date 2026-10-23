@@ -1,0 +1,5 @@
+currency,period,n,beta_pct_per_10bp,se,t,r2
+Yuan (USD/CNY),2005 to Jul 2015,127,0.039,0.013,3.027,0.049
+Yuan (USD/CNY),Aug 2015 onwards,112,0.214,0.073,2.917,0.148
+Won (USD/KRW),2005 to Jul 2015,127,-0.055,0.138,-0.399,0.001
+Won (USD/KRW),Aug 2015 onwards,112,0.179,0.156,1.148,0.021

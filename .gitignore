@@ -1,0 +1,16 @@
+# never publish the API key
+fred_key.txt
+.env
+
+# Python clutter
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+.DS_Store
+
+# raw downloads are re-created by 01_data_pull.py (keeps the repo small)
+data/raw/*.csv
+
+run_log.txt

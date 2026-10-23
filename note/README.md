@@ -1,0 +1,1 @@
+US_Payrolls_Note.pdf is the research note built on this code. Labour and market-reaction figures come from outputs/key_numbers.txt. Fed policy and futures pricing are cited with their sources in the note.

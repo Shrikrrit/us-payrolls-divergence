@@ -1,0 +1,14 @@
+test,group,n,mean,se,t,day_move
+A revision bias,Accelerating (real time),120,1.967,11.489,0.171,
+A revision bias,Slowing (real time),155,-16.394,11.909,-1.377,
+B revision by headline,"Accelerating (real time), headline above trend",65,-5.215,13.62,-0.383,
+B revision by headline,"Accelerating (real time), headline below trend",55,10.455,13.89,0.753,
+B revision by headline,"Slowing (real time), headline above trend",68,-19.853,16.112,-1.232,
+B revision by headline,"Slowing (real time), headline below trend",87,-13.69,14.224,-0.962,
+C reversal slope,Accelerating (real time),119,-0.077,0.175,-0.44,
+C fade,"Accelerating (real time), headline above trend",65,0.754,1.947,0.387,3.369
+C fade,"Accelerating (real time), headline below trend",54,2.019,1.477,1.367,-1.593
+C reversal slope,Slowing (real time),155,0.194,0.308,0.628,
+C fade,"Slowing (real time), headline above trend",68,-0.191,1.097,-0.174,2.779
+C fade,"Slowing (real time), headline below trend",87,3.391,1.662,2.041,-1.632
+C baseline,All releases,274,1.606,0.8,2.007,

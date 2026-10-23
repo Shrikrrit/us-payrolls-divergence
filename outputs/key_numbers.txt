@@ -1,0 +1,86 @@
+KEY NUMBERS FOR THE NOTE (auto-generated)
+
+=== Revisions (02) ===
+All          rev_total      n=299  mean=   -8.8k  t=-1.07  mean|rev|=  64.8k  share negative=52%
+All          rev_sample     n=297  mean=    3.5k  t= 0.74  mean|rev|=  42.1k  share negative=46%
+Accelerating rev_total      n=121  mean=   22.1k  t= 2.55  mean|rev|=  56.4k  share negative=34%
+Accelerating rev_sample     n=119  mean=   16.9k  t= 3.51  mean|rev|=  41.8k  share negative=39%
+Slowing      rev_total      n=152  mean=  -19.3k  t=-2.14  mean|rev|=  64.6k  share negative=62%
+Slowing      rev_sample     n=152  mean=   -1.4k  t=-0.27  mean|rev|=  39.9k  share negative=50%
+Recession    rev_total      n=26   mean=  -92.0k  t=-2.53  mean|rev|= 104.8k  share negative=73%
+Recession    rev_sample     n=26   mean=  -28.6k  t=-1.11  mean|rev|=  56.7k  share negative=58%
+
+Last 12 months: sum of first prints = 737k, sum as of today = 496k, difference = -241k
+Last 12 months: months revised down = 7 of 12
+Benchmark+seasonal revision by year, fully benchmarked years only (through 2024) (k): 2018: -287, 2019: -167, 2020: 55, 2022: -27, 2023: -265, 2024: -889
+
+=== Divergence (03) ===
+Household series used: Household survey, adjusted to payroll concept
+Latest month: Sep 2026
+Household months with no data, filled by interpolation: Oct 2025
+Level change since Dec 2019 (includes January breaks): payrolls 7.25m, household 5.37m, gap 1.88m
+Last 12 months EXCLUDING January (11 months): payrolls 336k, household 29k
+6-month average monthly change excl. January: payrolls 66k, household 72k
+January changes, payrolls vs household (k), difference is a rough break indicator: 2019: 251 vs -282, 2020: 237 vs 251, 2021: 315 vs 435, 2022: 190 vs 394, 2023: 434 vs 844, 2024: 175 vs -357, 2025: -48 vs 2,347, 2026: 160 vs -507
+Check the official population adjustment in each January Employment Situation release before quoting break sizes.
+
+=== Noise and breakeven (04) ===
+Own breakeven: not calculated (POP_GROWTH_ANNUAL_PCT and LFPR_DRIFT_PP_PER_YEAR are set to None in config.py)
+Published breakeven range in config: 15 to 87k
+90% CI on one monthly print: ±122k. Rough CI on a 3-month average if errors were independent: ±70k
+Latest month Sep 2026: first print 29k, today 29k
+3-month average (today's data): 51k
+Months in last 24 inside ±CI of zero (not statistically different from no growth): 16 of 24
+Months in last 24 inside ±CI of breakeven midpoint (51k): 20 of 24
+Months in last 24 where the FIRST print was above breakeven midpoint but today's value is below: 6
+
+=== Cross-checks (05) ===
+Initial claims, 4-wk avg               latest (2026-10-03) 198.00 | 12m ago 234.0 | 2018-19 avg 218.83 thousands
+Continuing claims                      latest (2026-09-26) 1.72 | 12m ago 1.92 | 2018-19 avg 1.72 millions
+JOLTS job openings                     latest (2026-08-01) 7.08 | 12m ago 6.92 | 2018-19 avg 7.13 millions
+BLS private payrolls, 3m avg change    latest (2026-09-01) 54.33 | 12m ago 37.67 | 2018-19 avg 165.22 thousands
+ADP private, 3m avg change             latest (2026-09-01) 56.67 | 12m ago 71.33 | 2018-19 avg 145.07 thousands
+Unemployment rate                      latest (2026-09-01) 4.20 | 12m ago 4.4 | 2018-19 avg 3.78 %
+
+=== Market reaction (06) ===
+Since 2005: n=239, headline 1.77bp/100k (t=2.59), revisions 2.78bp/100k (t=3.94), R2=0.14
+Last 5 years: n=57, headline 3.34bp/100k (t=2.76), revisions 3.34bp/100k (t=3.27), R2=0.20
+Excl. 1% tails: n=227, headline 1.92bp/100k (t=3.29), revisions 2.77bp/100k (t=3.52), R2=0.12
+With unemployment: n=237, headline 1.78bp/100k (t=2.59), revisions 2.79bp/100k (t=4.08), R2=0.14, unemployment 0.04bp per +0.1pp (t=0.10)
+Note: headline_vs_trend is a proxy for the surprise. With Bloomberg consensus the fit would be tighter.
+
+=== Asian FX example (07) ===
+Yuan (USD/CNY)  2005 to Jul 2015  n=127  beta=0.039% per 10bp (t=3.03), R2=0.05
+Yuan (USD/CNY)  Aug 2015 onwards  n=112  beta=0.214% per 10bp (t=2.92), R2=0.15
+Won (USD/KRW)   2005 to Jul 2015  n=127  beta=-0.055% per 10bp (t=-0.40), R2=0.00
+Won (USD/KRW)   Aug 2015 onwards  n=112  beta=0.179% per 10bp (t=1.15), R2=0.02
+Post-2015 yuan sensitivity as share of won sensitivity: 120% (won estimate not significant, t=1.15: read as comparable, not as a precise ratio)
+Yuan (USD/CNY)  post-2015 average absolute two-day move: around payrolls 0.308%, other windows 0.232%, ratio 1.32x
+Won (USD/KRW)   post-2015 average absolute two-day move: around payrolls 0.819%, other windows 0.580%, ratio 1.41x
+Note: FX measured over two days (close before release to next trading day) because the noon NY won rate mostly reflects the Seoul session. DEXCHUS is the onshore rate, managed via the daily fixing.
+
+=== Real-time regime and market follow-through (08) ===
+A  Accelerating (real time)  revision latest minus first: n=120  mean=   2.0k  t= 0.17
+A  Slowing (real time)       revision latest minus first: n=155  mean= -16.4k  t=-1.38
+B  Accelerating (real time), headline above trend       revision: n=65   mean=  -5.2k  t=-0.38
+B  Accelerating (real time), headline below trend       revision: n=55   mean=  10.5k  t= 0.75
+B  Slowing (real time), headline above trend            revision: n=68   mean= -19.9k  t=-1.23
+B  Slowing (real time), headline below trend            revision: n=87   mean= -13.7k  t=-0.96
+C  Accelerating (real time)  10-day move on release-day move: n=119  slope=-0.08  t=-0.44
+C  Accelerating (real time), headline above trend       release day   3.4bp, next 10 days   0.8bp (t= 0.39), n=65
+C  Accelerating (real time), headline below trend       release day  -1.6bp, next 10 days   2.0bp (t= 1.37), n=54
+C  Slowing (real time)       10-day move on release-day move: n=155  slope= 0.19  t= 0.63
+C  Slowing (real time), headline above trend            release day   2.8bp, next 10 days  -0.2bp (t=-0.17), n=68
+C  Slowing (real time), headline below trend            release day  -1.6bp, next 10 days   3.4bp (t= 2.04), n=87
+C  Baseline, all releases: next 10 days   1.6bp (t= 2.01), n=274. Compare each group with this, not with zero.
+
+Latest release (02 Oct 2026, Sep 2026): real-time regime = Accelerating (real time), 6-month average 66k vs 17k in the prior 6 months
+Real-time regime agrees with the hindsight regime of 02_revisions.py in 84% of months (recession months counted as slowing)
+
+
+=== Wages and core inflation (09) ===
+Average hourly earnings, private       latest Sep 2026: y/y 3.0%, 3m ann. 2.4%, 6m ann. 2.5% | y/y a year ago 3.8% | 2018-19 avg 3.2%
+ECI wages and salaries, private        latest Apr 2026: y/y 3.1%, q/q ann. 3.5% | y/y a year ago 3.6% | 2018-19 avg 3.0%
+Core PCE prices                        latest Aug 2026: y/y 3.0%, 3m ann. 2.0%, 6m ann. 2.7% | y/y a year ago 2.9% | 2018-19 avg 1.8%
+Core CPI                               latest Sep 2026: y/y 2.8%, 3m ann. 3.4%, 6m ann. 2.9% | y/y a year ago 3.1% | 2018-19 avg 2.2%
+Wage growth consistent with 2% inflation (2% plus 1% to 1.5% productivity): 3.0% to 3.5%
